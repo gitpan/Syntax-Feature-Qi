@@ -1,0 +1,49 @@
+NAME
+    Syntax::Feature::Qi - Remove the same indendation from all lines
+
+SYNOPSIS
+        use syntax 'qi';
+
+        say qs{
+            This is a sub routine:
+            sub printme {
+                print shift;
+            }
+        };
+
+        # is exactly the same as
+
+        say qs{
+        This is a sub routine:
+        sub printme {
+            print shift;
+        }
+        };
+
+DESCRIPTION
+    This is a syntax extension to be used with syntax.
+
+    It provides two quote-like operators, "qi" and "qqi". They are drop-in
+    replacements for "q" and "qq", respectively.
+
+    They work like this: First they find the first line in the string with a
+    non-white space character. It saves the white space from the beginning
+    of that line up to that character, and then it tries to remove the exact
+    same whitespace from all other lines in the string.
+
+SEE ALSO
+    Syntax::Feature::Ql (which served as a base for this)
+    Syntax::Feature::Qs
+    String::Nudge
+    syntax
+
+AUTHOR
+    Erik Carlsson <info@code301.com>
+
+COPYRIGHT
+    Copyright 2014 - Erik Carlsson
+
+LICENSE
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
