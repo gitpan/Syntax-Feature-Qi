@@ -1,5 +1,12 @@
 Revision history for Syntax-Feature-Qi
 
+0.0101 2014-12-11T15:45:19Z CET
+ [Bug Fixes]
+ - Required both qi and qs in test.
+
+ [Documentation]
+ - Used qs instead of qi in synopsis.
+
 0.0100 2014-12-10T18:58:02Z CET
  - Initial release
 

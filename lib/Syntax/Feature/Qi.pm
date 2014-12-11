@@ -1,7 +1,7 @@
 use strict;
 
 package Syntax::Feature::Qi;
-$Syntax::Feature::Qi::VERSION = '0.0100';
+$Syntax::Feature::Qi::VERSION = '0.0101';
 use Devel::Declare 0.006007 ();
 use B::Hooks::EndOfScope 0.09;
 use Sub::Install 0.925 qw/install_sub/;
@@ -91,7 +91,7 @@ Syntax::Feature::Qi - Remove the same indendation from all lines
 
     use syntax 'qi';
 
-    say qs{
+    say qi{
         This is a sub routine:
         sub printme {
             print shift;
@@ -100,7 +100,7 @@ Syntax::Feature::Qi - Remove the same indendation from all lines
 
     # is exactly the same as
 
-    say qs{
+    say qi{
     This is a sub routine:
     sub printme {
         print shift;

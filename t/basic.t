@@ -1,6 +1,6 @@
 use strict;
 use Test::More;
-use syntax qw/qi qs/;
+use syntax qw/qi/;
 
 subtest 'qi' => sub {
     is qi/a test/, 'a test', 'single quotes, single line';

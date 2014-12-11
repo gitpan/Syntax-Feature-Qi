@@ -4,7 +4,7 @@ NAME
 SYNOPSIS
         use syntax 'qi';
 
-        say qs{
+        say qi{
             This is a sub routine:
             sub printme {
                 print shift;
@@ -13,7 +13,7 @@ SYNOPSIS
 
         # is exactly the same as
 
-        say qs{
+        say qi{
         This is a sub routine:
         sub printme {
             print shift;
